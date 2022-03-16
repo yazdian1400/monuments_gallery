@@ -2,4 +2,8 @@
     <string name="app_name">monuments_gallery</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_home">home</string>
+    <string name="menu_setting">setting</string>
+    <string name="menu_profile">profile</string>
+    <string name="menu_exit">exit</string>
 </resources>
