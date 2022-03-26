@@ -7,10 +7,9 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
 import androidx.navigation.ui.*
+import androidx.navigation.ui.NavigationUI.onNavDestinationSelected
 import com.google.android.material.navigation.NavigationView
 import ir.homework.monuments_gallery.databinding.ActivityMainBinding
 
@@ -40,11 +39,22 @@ class MainActivity : AppCompatActivity(){
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+        navView.setNavigationItemSelectedListener(NavigationView.OnNavigationItemSelectedListener { item ->
+            if (item.itemId == R.id.nav_exit) {
+                finish()
+            }
+            else {
+                onNavDestinationSelected(item, navController)
+                drawerLayout.closeDrawers()
+            }
+            false
+        })
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         return super.onCreateOptionsMenu(menu)
     }
+
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
