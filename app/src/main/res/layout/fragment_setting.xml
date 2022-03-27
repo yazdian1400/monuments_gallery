@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SettingFragment">
+    tools:context=".SettingFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="setting"
-        android:textSize="60sp"
-        android:gravity="center"
-        android:background="@color/white"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="36dp"
+            android:text="number of images"/>
 
-</FrameLayout>
+        <EditText
+            android:id="@+id/et_num_image"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="4"
+            android:textSize="36dp" />
+    </LinearLayout>
+</LinearLayout>
