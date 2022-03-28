@@ -1,17 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".HomeFragment">
 
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="home"
-        android:textSize="60sp"
-        android:gravity="center"
-        android:background="@color/teal_200"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/style_layout_of_image_of_home"
+            android:id="@+id/cl_1">
 
-</FrameLayout>
+            <ImageView
+                style="@style/style_image_in_home"
+                android:id="@+id/iv_1"
+                android:src="@drawable/profile1"
+                app:layout_constraintStart_toStartOf="@id/cl_1"
+                app:layout_constraintEnd_toEndOf="@id/cl_1"
+                app:layout_constraintTop_toTopOf="@id/cl_1" />
+
+            <TextView
+                style="@style/style_title_of_image_in_home"
+                android:id="@+id/tv_1"
+                app:layout_constraintStart_toStartOf="@id/cl_1"
+                app:layout_constraintEnd_toEndOf="@id/cl_1"
+                app:layout_constraintBottom_toBottomOf="@id/cl_1"
+                app:layout_constraintTop_toBottomOf="@id/iv_1"
+                tools:text="title1"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/style_layout_of_image_of_home"
+            android:id="@+id/cl_2">
+
+            <ImageView
+                style="@style/style_image_in_home"
+                android:id="@+id/iv_2"
+                android:src="@drawable/profile1"
+                app:layout_constraintStart_toStartOf="@id/cl_2"
+                app:layout_constraintEnd_toEndOf="@id/cl_2"
+                app:layout_constraintTop_toTopOf="@id/cl_2" />
+
+            <TextView
+                style="@style/style_title_of_image_in_home"
+                android:id="@+id/tv_2"
+                app:layout_constraintStart_toStartOf="@id/cl_2"
+                app:layout_constraintEnd_toEndOf="@id/cl_2"
+                app:layout_constraintBottom_toBottomOf="@id/cl_2"
+                app:layout_constraintTop_toBottomOf="@id/iv_2"
+                tools:text="title2"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/style_layout_of_image_of_home"
+            android:id="@+id/cl_3">
+
+            <ImageView
+                style="@style/style_image_in_home"
+                android:id="@+id/iv_3"
+                android:src="@drawable/profile1"
+                app:layout_constraintStart_toStartOf="@id/cl_3"
+                app:layout_constraintEnd_toEndOf="@id/cl_3"
+                app:layout_constraintTop_toTopOf="@id/cl_3" />
+
+            <TextView
+                style="@style/style_title_of_image_in_home"
+                android:id="@+id/tv_3"
+                app:layout_constraintStart_toStartOf="@id/cl_3"
+                app:layout_constraintEnd_toEndOf="@id/cl_3"
+                app:layout_constraintBottom_toBottomOf="@id/cl_3"
+                app:layout_constraintTop_toBottomOf="@id/iv_3"
+                tools:text="title3"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/style_layout_of_image_of_home"
+            android:id="@+id/cl_4">
+
+            <ImageView
+                style="@style/style_image_in_home"
+                android:id="@+id/iv_4"
+                android:src="@drawable/profile1"
+                app:layout_constraintStart_toStartOf="@id/cl_4"
+                app:layout_constraintEnd_toEndOf="@id/cl_4"
+                app:layout_constraintTop_toTopOf="@id/cl_4" />
+
+            <TextView
+                style="@style/style_title_of_image_in_home"
+                android:id="@+id/tv_4"
+                app:layout_constraintStart_toStartOf="@id/cl_4"
+                app:layout_constraintEnd_toEndOf="@id/cl_4"
+                app:layout_constraintBottom_toBottomOf="@id/cl_4"
+                app:layout_constraintTop_toBottomOf="@id/iv_4"
+                tools:text="title4"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/style_layout_of_image_of_home"
+            android:id="@+id/cl_5">
+
+            <ImageView
+                style="@style/style_image_in_home"
+                android:id="@+id/iv_5"
+                android:src="@drawable/profile1"
+                app:layout_constraintStart_toStartOf="@id/cl_5"
+                app:layout_constraintEnd_toEndOf="@id/cl_5"
+                app:layout_constraintTop_toTopOf="@id/cl_5" />
+
+            <TextView
+                style="@style/style_title_of_image_in_home"
+                android:id="@+id/tv_5"
+                app:layout_constraintStart_toStartOf="@id/cl_5"
+                app:layout_constraintEnd_toEndOf="@id/cl_5"
+                app:layout_constraintBottom_toBottomOf="@id/cl_5"
+                app:layout_constraintTop_toBottomOf="@id/iv_5"
+                tools:text="title5"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/style_layout_of_image_of_home"
+            android:id="@+id/cl_6">
+
+            <ImageView
+                style="@style/style_image_in_home"
+                android:id="@+id/iv_6"
+                android:src="@drawable/profile1"
+                app:layout_constraintStart_toStartOf="@id/cl_6"
+                app:layout_constraintEnd_toEndOf="@id/cl_6"
+                app:layout_constraintTop_toTopOf="@id/cl_6" />
+
+            <TextView
+                style="@style/style_title_of_image_in_home"
+                android:id="@+id/tv_6"
+                app:layout_constraintStart_toStartOf="@id/cl_6"
+                app:layout_constraintEnd_toEndOf="@id/cl_6"
+                app:layout_constraintBottom_toBottomOf="@id/cl_6"
+                app:layout_constraintTop_toBottomOf="@id/iv_6"
+                tools:text="title6"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>
