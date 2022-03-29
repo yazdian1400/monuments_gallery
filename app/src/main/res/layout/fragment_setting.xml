@@ -41,6 +41,7 @@
 
         <com.google.android.material.button.MaterialButton
             style="@style/style_button_in_setting"
+            android:id="@+id/btn_edit_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="edit profile" />

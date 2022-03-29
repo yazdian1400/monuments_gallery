@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import ir.homework.monuments_gallery.databinding.FragmentHomeBinding
 import ir.homework.monuments_gallery.databinding.FragmentSettingBinding
 
@@ -34,6 +35,10 @@ class SettingFragment : Fragment() {
             val editor = sharedPreferences.edit()
             editor.putString("num_image", binding.etNumImage.text.toString())
             editor.apply()
+        }
+
+        binding.btnEditProfile.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_setting_to_editProfileFragment)
         }
     }
 
