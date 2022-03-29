@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SettingFragment"
     android:orientation="vertical">
 
@@ -29,5 +30,19 @@
             android:layout_height="match_parent"
             android:id="@+id/btn_num_submit"
             android:text="submit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/style_button_in_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="edit profile" />
     </LinearLayout>
 </LinearLayout>
