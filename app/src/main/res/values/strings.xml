@@ -6,4 +6,10 @@
     <string name="menu_setting">setting</string>
     <string name="menu_profile">profile</string>
     <string name="menu_exit">exit</string>
+    <string name="monument1_description">Eram Garden is a historic Persian garden in Shiraz, Iran. It belonged to the leaders of Qashqai tribe before being confiscated by the central government. The garden, and the building within it,  are located at the northern shore of the Khoshk River in the Fars province.</string>
+    <string name="monument2_description">Darband is one of the famous neighborhoods of north Tehran where so many people go for trekking, having a cup of tea, eating sour and sweet apricots. It is known for its fresh and breezy weather and mountaineers route.</string>
+    <string name="monument3_description">Rudkhan Castle is a brick and stone medieval castle in Iran.Located 25 km southwest of Fuman city north of Iran in Gilan province, it is a military complex which had been constructed during the Sasanian era (224 to 651), and later rebuilt during the Seljuq era by the Nizari Ismailis.</string>
+    <string name="monument4_description">Masouleh is one of Iran’s most picturesque locations. The steep mountainside village is filled with lush greenery and houses which soar up high into billowing mist, layered and built as high as possible due to the tough living conditions on the lower ground.</string>
+    <string name="monument5_description">At the center of the city of Isfahan, there’s a place that takes the breath of every viewer away with its unparalleled architecture. This place is Naqsh-e-Jahan Square, and its name translates into Image of the World.</string>
+    <string name="monument6_description">Pole Khaju or Kahju Bridge is the finest bridge in Isfahan. This bridge was built in order of Shah Abbas II, the Persian Safavid King, in 1650.</string>
 </resources>
