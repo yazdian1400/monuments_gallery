@@ -1,6 +1,6 @@
 package ir.homework.monuments_gallery
 
-class Repository {
+object Repository {
     val monumentList = mutableListOf<Monument>()
 
     fun setMonumentList(){
