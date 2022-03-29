@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditProfileFragment">
+    tools:context=".EditProfileFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/style_edit_text_in_edit_profile"
+        android:id="@+id/et_fullname"
+        android:hint="full name"/>
 
-</FrameLayout>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_national_code"
+        style="@style/style_edit_text_in_edit_profile"
+        android:hint="national code"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_tel"
+        style="@style/style_edit_text_in_edit_profile"
+        android:hint="phone number"
+        android:inputType="number" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/address"
+        style="@style/style_edit_text_in_edit_profile"
+        android:hint="address" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        style="@style/style_edit_text_in_edit_profile"
+        android:hint="email address"
+        android:inputType="textEmailAddress" />
+
+    <Switch
+        android:id="@+id/switch1"
+        style="@style/style_edit_text_in_edit_profile"
+        android:text="show profile in home" />
+    <com.google.android.material.button.MaterialButton
+        style="@style/style_button_in_profile"
+        android:id="@+id/btn_save"
+        android:text="save"/>
+
+</LinearLayout>
