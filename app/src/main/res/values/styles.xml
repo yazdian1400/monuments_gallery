@@ -39,4 +39,12 @@
         <item name="android:gravity">start</item>
         <item name="android:radius">16dp</item>
     </style>
+    <style name="style_text_view_in_profile">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
 </resources>

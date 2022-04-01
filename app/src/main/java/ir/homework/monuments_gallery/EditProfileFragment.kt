@@ -36,7 +36,7 @@ class EditProfileFragment : Fragment() {
                 editor.putString("phoneNumber", binding.etTel.text.toString())
                 editor.putString("address", binding.etAddress.text.toString())
                 editor.putString("nationalCode", binding.etNationalCode.text.toString())
-                editor.putString("showProfile", binding.switchShowProfile.isChecked)
+                editor.putBoolean("showProfile", binding.switchShowProfile.isChecked)
                 editor.apply()
             }
             showErrorForFilling()

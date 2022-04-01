@@ -43,7 +43,12 @@ class ProfileFragment : Fragment() {
         val address = sharedPreferences.getString("address", "")
         val nationalCode = sharedPreferences.getString("nationalCode", "")
 
-        Toast.makeText(requireContext(), fullName + email + phoneNumber + address + nationalCode,Toast.LENGTH_LONG).show()
+        binding.tvProfileName.text = fullName
+        binding.tvProfileNationalCode.text = nationalCode
+        binding.tvProfileTel.text = phoneNumber
+        binding.tvProfileAddress.text = address
+        binding.tvProfileEmail.text = email
+
     }
 
     override fun onAttach(context: Context) {
