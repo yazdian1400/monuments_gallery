@@ -25,18 +25,18 @@
         android:inputType="number" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/address"
+        android:id="@+id/et_address"
         style="@style/style_edit_text_in_edit_profile"
         android:hint="address" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/email"
+        android:id="@+id/et_email"
         style="@style/style_edit_text_in_edit_profile"
         android:hint="email address"
         android:inputType="textEmailAddress" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switch_show_profile"
         style="@style/style_edit_text_in_edit_profile"
         android:text="show profile in home" />
     <com.google.android.material.button.MaterialButton
