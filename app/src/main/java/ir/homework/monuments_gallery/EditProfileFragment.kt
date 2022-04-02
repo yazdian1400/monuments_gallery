@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import ir.homework.monuments_gallery.databinding.FragmentEditProfileBinding
 
 class EditProfileFragment : Fragment() {
@@ -38,8 +39,10 @@ class EditProfileFragment : Fragment() {
                 editor.putString("nationalCode", binding.etNationalCode.text.toString())
                 editor.putBoolean("showProfile", binding.switchShowProfile.isChecked)
                 editor.apply()
+                requireActivity().onBackPressed()
+            } else {
+                showErrorForFilling()
             }
-            showErrorForFilling()
         }
     }
 
