@@ -9,8 +9,7 @@
     <com.google.android.material.textfield.TextInputEditText
         style="@style/style_edit_text_in_edit_profile"
         android:id="@+id/et_account_number"
-        android:hint="account number"
-        android:inputType="number"/>
+        android:hint="account number" />
     <com.google.android.material.textfield.TextInputEditText
         style="@style/style_edit_text_in_edit_profile"
         android:id="@+id/et_card_number"
@@ -19,8 +18,7 @@
     <com.google.android.material.textfield.TextInputEditText
         style="@style/style_edit_text_in_edit_profile"
         android:id="@+id/et_sheba_number"
-        android:hint="sheba number"
-        android:inputType="number"/>
+        android:hint="sheba number" />
     <com.google.android.material.button.MaterialButton
         style="@style/style_button_in_profile"
         android:id="@+id/btn_save_bank_account"
