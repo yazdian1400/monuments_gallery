@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".EditBankAccountFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/style_edit_text_in_edit_profile"
+        android:id="@+id/et_account_number"
+        android:hint="account number"
+        android:inputType="number"/>
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/style_edit_text_in_edit_profile"
+        android:id="@+id/et_card_number"
+        android:hint="card number"
+        android:inputType="number"/>
+    <com.google.android.material.textfield.TextInputEditText
+        style="@style/style_edit_text_in_edit_profile"
+        android:id="@+id/et_sheba_number"
+        android:hint="sheba number"
+        android:inputType="number"/>
+</LinearLayout>
