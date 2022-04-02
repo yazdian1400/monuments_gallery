@@ -13,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
+import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import ir.homework.monuments_gallery.databinding.FragmentHomeBinding
 
@@ -20,6 +21,7 @@ import ir.homework.monuments_gallery.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
     lateinit var sharedPreferences: SharedPreferences
+    lateinit var vModel: MonumentViewModel
     private val imageList = mutableListOf<ImageView>()
     private val textList = mutableListOf<TextView>()
 
@@ -38,6 +40,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        vModel = ViewModelProvider(requireActivity())[MonumentViewModel::class.java]
         initViews()
     }
 
@@ -80,10 +83,10 @@ class HomeFragment : Fragment() {
 
     private fun setImageAndTitleOfItems() {
         for (i in 0..5) {
-            Repository.setMonumentList()
-            textList[i].text = Repository.monumentList[i].title
+            //Repository.setMonumentList()
+            textList[i].text = vModel.monumentList[i].title
             Glide.with(requireActivity())
-                .load(Repository.monumentList[i].src)
+                .load(vModel.monumentList[i].src)
                 .circleCrop()
                 .into(imageList[i])
         }
