@@ -29,6 +29,8 @@ class EditProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        showDataIfExist()
+
         binding.btnSave.setOnClickListener{
             if (areAllFieldsFilled()) {
                 val editor = sharedPreferences.edit()
@@ -44,6 +46,25 @@ class EditProfileFragment : Fragment() {
                 showErrorForFilling()
             }
         }
+    }
+
+    private fun showDataIfExist() {
+        val fullName = sharedPreferences.getString("fullName", binding.etFullname.text.toString())
+        if (fullName != "") {
+            val email = sharedPreferences.getString("email", "")
+            val phoneNumber = sharedPreferences.getString("phoneNumber", "")
+            val address = sharedPreferences.getString("address", "")
+            val nationalCode = sharedPreferences.getString("nationalCode", "")
+            val showProfile = sharedPreferences.getBoolean("showProfile", false)
+
+            binding.etFullname.setText(fullName)
+            binding.etEmail.setText(email)
+            binding.etAddress.setText(address)
+            binding.etNationalCode.setText(nationalCode)
+            binding.etTel.setText(phoneNumber)
+            binding.switchShowProfile.isChecked = showProfile
+        }
+
     }
 
     private fun showErrorForFilling() {
