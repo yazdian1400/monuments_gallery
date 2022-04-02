@@ -27,7 +27,11 @@
         android:id="@+id/nav_profile"
         android:name="ir.homework.monuments_gallery.ProfileFragment"
         android:label="@string/menu_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_bankAccountFragment"
+            app:destination="@id/bankAccountFragment" />
+    </fragment>
     <fragment
         android:id="@+id/editProfileFragment"
         android:name="ir.homework.monuments_gallery.EditProfileFragment"
@@ -38,4 +42,9 @@
         android:name="ir.homework.monuments_gallery.EditBankAccountFragment"
         android:label="fragment_edit_bank_account"
         tools:layout="@layout/fragment_edit_bank_account" />
+    <fragment
+        android:id="@+id/bankAccountFragment"
+        android:name="ir.homework.monuments_gallery.BankAccountFragment"
+        android:label="fragment_bank_account"
+        tools:layout="@layout/fragment_bank_account" />
 </navigation>

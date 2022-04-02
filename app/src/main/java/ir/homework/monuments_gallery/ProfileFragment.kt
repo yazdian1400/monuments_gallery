@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import ir.homework.monuments_gallery.databinding.FragmentHomeBinding
@@ -49,6 +50,9 @@ class ProfileFragment : Fragment() {
         binding.tvProfileAddress.text = address
         binding.tvProfileEmail.text = email
 
+        binding.btnShowBankAccount.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_profile_to_bankAccountFragment)
+        }
     }
 
     override fun onAttach(context: Context) {
