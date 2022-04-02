@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_nav_setting_to_editProfileFragment"
             app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_nav_setting_to_editBankAccountFragment"
+            app:destination="@id/editBankAccountFragment" />
     </fragment>
     <fragment
         android:id="@+id/nav_profile"
@@ -30,4 +33,9 @@
         android:name="ir.homework.monuments_gallery.EditProfileFragment"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/editBankAccountFragment"
+        android:name="ir.homework.monuments_gallery.EditBankAccountFragment"
+        android:label="fragment_edit_bank_account"
+        tools:layout="@layout/fragment_edit_bank_account" />
 </navigation>

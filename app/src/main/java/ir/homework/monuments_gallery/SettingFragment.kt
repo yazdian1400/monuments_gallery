@@ -40,6 +40,9 @@ class SettingFragment : Fragment() {
         binding.btnEditProfile.setOnClickListener{
             findNavController().navigate(R.id.action_nav_setting_to_editProfileFragment)
         }
+        binding.btnEditBankAccount.setOnClickListener{
+            findNavController().navigate(R.id.action_nav_setting_to_editBankAccountFragment)
+        }
     }
 
     override fun onAttach(context: Context) {

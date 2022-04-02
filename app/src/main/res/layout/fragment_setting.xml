@@ -36,14 +36,22 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:padding="8dp">
 
         <com.google.android.material.button.MaterialButton
             style="@style/style_button_in_setting"
             android:id="@+id/btn_edit_profile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:text="edit profile" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/style_button_in_setting"
+            android:id="@+id/btn_edit_bank_account"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="edit bank account" />
     </LinearLayout>
 </LinearLayout>
