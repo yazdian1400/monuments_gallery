@@ -45,7 +45,19 @@ class HomeFragment : Fragment() {
         setViewLists()
         setImageAndTitleOfItems()
         val numImage = sharedPreferences.getString("num_image", "4")
+        showNameOfUser()
         setVisibilityOfItems(numImage)
+    }
+
+    private fun showNameOfUser() {
+        val showProfile = sharedPreferences.getBoolean("showProfile", false)
+        if (showProfile) {
+            val fullName = sharedPreferences.getString("fullName", "")
+            binding.tvNameHome.text = "welcome $fullName"
+            binding.tvNameHome.isVisible = true
+        } else {
+            binding.tvNameHome.isVisible = false
+        }
     }
 
     private fun setViewLists() {
