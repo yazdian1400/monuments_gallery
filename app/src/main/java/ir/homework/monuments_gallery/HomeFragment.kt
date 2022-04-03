@@ -49,7 +49,14 @@ class HomeFragment : Fragment() {
         setImageAndTitleOfItems()
         val numImage = sharedPreferences.getString("num_image", "4")
         showNameOfUser()
+        showTipOfTheDay()
         setVisibilityOfItems(numImage)
+    }
+
+    private fun showTipOfTheDay() {
+        val numOfTips = vModel.tipList.size
+        val  r = (0 until numOfTips).random()
+        binding.tvSentence.text = vModel.tipList[r]
     }
 
     private fun showNameOfUser() {

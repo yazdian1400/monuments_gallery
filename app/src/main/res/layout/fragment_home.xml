@@ -166,4 +166,18 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/style_text_view_name_in_home"
+            android:text="Tip of the day:"/>
+        <TextView
+            style="@style/style_text_view_name_in_home"
+            android:id="@+id/tv_sentence"
+            tools:text="sentence"/>
+    </LinearLayout>
 </LinearLayout>
