@@ -16,27 +16,28 @@
         android:layout_height="0dp"
         android:layout_weight="4"
         android:orientation="horizontal">
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            style="@style/style_layout_of_image_of_home"
-            android:id="@+id/cl_1">
+            android:id="@+id/cl_1"
+            style="@style/style_layout_of_image_of_home">
 
             <ImageView
-                style="@style/style_image_in_home"
                 android:id="@+id/iv_1"
+                style="@style/style_image_in_home"
                 android:src="@drawable/profile1"
-                app:layout_constraintStart_toStartOf="@id/cl_1"
+                app:layout_constraintBottom_toTopOf="@+id/tv_1"
                 app:layout_constraintEnd_toEndOf="@id/cl_1"
-                app:layout_constraintTop_toTopOf="@id/cl_1" />
+                app:layout_constraintStart_toStartOf="@id/cl_1"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                style="@style/style_title_of_image_in_home"
                 android:id="@+id/tv_1"
-                app:layout_constraintStart_toStartOf="@id/cl_1"
+                style="@style/style_title_of_image_in_home"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/cl_1"
-                app:layout_constraintBottom_toBottomOf="@id/cl_1"
-                app:layout_constraintTop_toBottomOf="@id/iv_1"
-                tools:text="title1"
-                />
+                app:layout_constraintStart_toStartOf="@id/cl_1"
+                app:layout_constraintTop_toBottomOf="@+id/iv_1"
+                tools:text="title1" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,6 +48,7 @@
                 style="@style/style_image_in_home"
                 android:id="@+id/iv_2"
                 android:src="@drawable/profile1"
+                app:layout_constraintBottom_toTopOf="@+id/tv_2"
                 app:layout_constraintStart_toStartOf="@id/cl_2"
                 app:layout_constraintEnd_toEndOf="@id/cl_2"
                 app:layout_constraintTop_toTopOf="@id/cl_2" />
@@ -75,6 +77,7 @@
                 style="@style/style_image_in_home"
                 android:id="@+id/iv_3"
                 android:src="@drawable/profile1"
+                app:layout_constraintBottom_toTopOf="@+id/tv_3"
                 app:layout_constraintStart_toStartOf="@id/cl_3"
                 app:layout_constraintEnd_toEndOf="@id/cl_3"
                 app:layout_constraintTop_toTopOf="@id/cl_3" />
@@ -98,6 +101,7 @@
                 style="@style/style_image_in_home"
                 android:id="@+id/iv_4"
                 android:src="@drawable/profile1"
+                app:layout_constraintBottom_toTopOf="@+id/tv_4"
                 app:layout_constraintStart_toStartOf="@id/cl_4"
                 app:layout_constraintEnd_toEndOf="@id/cl_4"
                 app:layout_constraintTop_toTopOf="@id/cl_4" />
@@ -127,6 +131,7 @@
                 style="@style/style_image_in_home"
                 android:id="@+id/iv_5"
                 android:src="@drawable/profile1"
+                app:layout_constraintBottom_toTopOf="@+id/tv_5"
                 app:layout_constraintStart_toStartOf="@id/cl_5"
                 app:layout_constraintEnd_toEndOf="@id/cl_5"
                 app:layout_constraintTop_toTopOf="@id/cl_5" />
@@ -150,6 +155,7 @@
                 style="@style/style_image_in_home"
                 android:id="@+id/iv_6"
                 android:src="@drawable/profile1"
+                app:layout_constraintBottom_toTopOf="@+id/tv_6"
                 app:layout_constraintStart_toStartOf="@id/cl_6"
                 app:layout_constraintEnd_toEndOf="@id/cl_6"
                 app:layout_constraintTop_toTopOf="@id/cl_6" />
