@@ -10,11 +10,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4">
+        android:layout_weight="5">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/iv_profile"
             android:layout_marginStart="64dp"
             android:layout_marginTop="16dp"
@@ -34,10 +34,10 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_1"
             android:text="full name:" />
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_2"
             android:id="@+id/tv_profile_name" />
     </LinearLayout>
 
@@ -48,10 +48,10 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_1"
             android:text="national code:" />
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_2"
             android:id="@+id/tv_profile_national_code" />
     </LinearLayout>
 
@@ -62,10 +62,10 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_1"
             android:text="phone number:" />
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_2"
             android:id="@+id/tv_profile_tel" />
     </LinearLayout>
 
@@ -76,12 +76,12 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_1"
             android:text="address:" />
 
         <TextView
             android:id="@+id/tv_profile_address"
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_2"
             android:singleLine="false" />
     </LinearLayout>
 
@@ -92,10 +92,10 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_1"
             android:text="email address:" />
         <TextView
-            style="@style/style_text_view_in_profile"
+            style="@style/style_text_view_in_profile_2"
             android:id="@+id/tv_profile_email" />
     </LinearLayout>
 
